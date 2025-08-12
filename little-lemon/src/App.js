@@ -10,12 +10,16 @@ import { useState } from 'react';
 import About from './Components/About';
 import Specials from './Components/Specials';
 import React, { useReducer } from 'react';
+import { fetchAPI } from './apis/mockApi';
 
 function App() {
 
   const [currentBooking, setCurrentBooking] = useState(null);
   const [reservations, setReservations] = useState([]);
-  const initializeTimes = () => {return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];};
+  const initializeTimes = () => {
+    const today = new Date();
+    return fetchAPI(today); // This returns an array of times for today
+  };
 
   const updateTimes = (state, action) => {
     const selectedDate = action.date;
