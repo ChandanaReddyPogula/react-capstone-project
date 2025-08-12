@@ -1,0 +1,30 @@
+/* Container nav styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem 20rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Karla', sans-serif;
+}
+
+/* Logo styling */
+.logo {
+  height: 50px;
+}
+
+/* Link styling */
+.nav-link {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #000000; /* Black text */
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  text-decoration: underline;
+}
