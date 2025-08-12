@@ -4,14 +4,12 @@ import outdoorImage from '../images/outdoor.jpg';
 import chefImage from '../images/chef.jpg';
 import { useNavigate } from 'react-router-dom';
 
-const BookingForm = ({ onSubmit }) => {
+const BookingForm = ({ onSubmit, availableTimes, dispatch }) => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState('');
   const [occasion, setOccasion] = useState('');
   const [seating, setSeating] = useState('');
-
-  const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
 
   const navigate = useNavigate();
 
@@ -27,6 +25,7 @@ const BookingForm = ({ onSubmit }) => {
     };
 
     if (date && time && guests && occasion && seating) {
+      dispatch({ type: 'UPDATE_TIMES', time: time });
       onSubmit(reservation); 
       navigate('/customer');
     } else {
