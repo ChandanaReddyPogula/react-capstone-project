@@ -13,7 +13,7 @@ function Hero() {
           We are a family owned Mediterranean restaurant, <br />
           focused on traditional recipes served with a modern twist.
         </p>
-        <button onClick={() => navigate('/booking')} className="hero-button">Reserve a Table</button>
+        <button onClick={() => navigate('/book')} className="hero-button">Reserve a Table</button>
       </div>
       <div className="hero-image">
         <img src={heroImage} alt="Appetizers served at Little Lemon" />

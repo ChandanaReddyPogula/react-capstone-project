@@ -28,7 +28,7 @@ const BookingForm = ({ onSubmit }) => {
 
     if (date && time && guests && occasion && seating) {
       onSubmit(reservation); 
-      navigate('/reservations');
+      navigate('/customer');
     } else {
       alert("Please fill out all fields");
     }
