@@ -25,7 +25,7 @@ const BookingForm = ({ onSubmit, availableTimes, dispatch }) => {
     };
 
     if (date && time && guests && occasion && seating) {
-      dispatch({ type: 'UPDATE_TIMES', time: time });
+      dispatch({ type: 'UPDATE_TIMES', time: time, availableTimes: availableTimes });
       onSubmit(reservation); 
       navigate('/customer');
     } else {

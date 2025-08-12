@@ -19,7 +19,7 @@ function App() {
 
   const updateTimes = (state, action) => {
     const selectedDate = action.date;
-    return initializeTimes().filter(time => time !== action.time);
+    return action.availableTimes.filter(time => time !== action.time);
   };
   const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
 
