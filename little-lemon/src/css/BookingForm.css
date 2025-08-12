@@ -1,0 +1,127 @@
+/* BookingForm.css */
+
+.booking-form-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #495E57;
+  font-family: 'Karla', sans-serif;
+  color: white;
+}
+
+.booking-form {
+  background-color: transparent;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-header h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+  margin-bottom: 0.25rem;
+  color: #F4CE14;
+}
+
+.booking-header h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #EDEFEE;
+}
+
+.booking-images {
+  display: flex;
+  gap: 1rem;
+}
+
+.booking-images img {
+  width: 50%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-control.full-width {
+  grid-column: span 2;
+}
+
+.form-control label {
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  background-color: white;
+}
+
+.radio-group {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.radio-option input {
+  accent-color: #F4CE14;
+  transform: scale(1.2);
+}
+
+.submit-btn {
+  background-color: #F4CE14;
+  color: #333333;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e6bd10;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-images {
+    flex-direction: column;
+  }
+
+  .booking-images img {
+    width: 100%;
+  }
+}

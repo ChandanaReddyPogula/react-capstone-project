@@ -1,7 +1,7 @@
-import './Testimonials.css';
-import user1 from './user1.jpg';
-import user2 from './user2.jpg';
-import user3 from './user3.jpg';
+import '../css/Testimonials.css';
+import user1 from '../images/user1.jpg';
+import user2 from '../images/user2.jpg';
+import user3 from '../images/user3.jpg';
 
 function Testimonials() {
   return (

@@ -1,6 +1,6 @@
-import './About.css';
-import chef1 from './chef1.jpg';
-import chef2 from './chef2.jpg';
+import '../css/About.css';
+import chef1 from '../images/chef1.jpg'
+import chef2 from '../images/chef2.jpg';
 
 function About() {
   return (

@@ -1,7 +1,7 @@
-import './Specials.css';
-import saladImg from './greek-salad.jpg';
-import bruschettaImg from './bruschetta.svg';
-import dessertImg from './lemon-dessert.jpg';
+import '../css/Specials.css';
+import saladImg from '../images/greek-salad.jpg';
+import bruschettaImg from '../images/bruschetta.svg';
+import dessertImg from '../images/lemon-dessert.jpg';
 
 function Specials() {
   return (
